@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.navbar-nav li{
+    padding:0 20px;
+}
+.navbar-nav li a{
+    font-size: 1.2rem;      
+}
+.carousel .carousel-inner .carousel-item img{
+    height: auto;
+}
+
+

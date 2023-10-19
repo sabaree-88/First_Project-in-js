@@ -4,28 +4,52 @@
     box-sizing: border-box;
 
 }
-.navbar-nav li{
-    padding:0 20px;
+.navbar{
+    background-color: #B91036;
 }
-.navbar-nav li a{
+.nav-item .nav-link{
+
     font-weight: 600;
-    font-size: 1.2rem;      
-}
-.carousel-caption {
-    top: 20%;
-    bottom: auto;
-}
-.jumbotron p{
     font-size: 1.2rem;
+    color: white !important;
 }
-.carousel-caption h3{
-    font-size: 1.5rem;
-    font-weight: 500;
+.nav-item .nav-link:hover{
+    color: #ee90a4 !important;
 }
-.carousel-caption p{
-    font-size: 1rem;
-    font-weight: 400;
+.about{
+    background-color: #B91036;
 }
-.card-footer{
-    bottom: 0;
+.card-body{
+    background-color: #B91036;
+}
+.navbar-toggler-icon{
+    background-color: white;
+    color: black;
+}
+.facts{
+    background-color: #B91036;
+}
+.text-img{
+    background: url(../img/text-bg.jpg) no-repeat center;
+    object-fit: contain;
+
+}
+.ttl h4{
+    /* padding-top: 16% !important; */
+    font-weight: 600;
+    color: white ;
+}
+.card{
+    opacity: 0.9;
+}
+.card:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+
+.err-msg{
+    display: none;
+}
+.valid-msg{
+    display: none;
 }

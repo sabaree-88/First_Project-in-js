@@ -86,10 +86,10 @@
                     <div class="row mt-1">
                         <div class="col-6">
                             <div class="form-group">
-                                <label for="phone-num" class="text-white">Password* <small>(<strong>minimum 8
+                                <label for="password" class="text-white">Password* <small>(<strong>minimum 8
                                             char</strong>, password should contain letters digits
                                         symbols)</small></label><br>
-                                <input type="tel" id="phone-num" class="form-control"
+                                <input type="password" id="password" class="form-control"
                                     placeholder="Enter your password.." name="password">
                                 <div class="err-msg text-danger">Enter your password, it should atleast 8 charcter!
                                 </div>
@@ -98,8 +98,8 @@
                         </div>
                         <div class="col-6">
                             <div class="form-group">
-                                <label for="phone-num" class="text-white">Re-enter your password*</label><br>
-                                <input type="tel" id="phone-num" class="form-control"
+                                <label for="re-type-pass" class="text-white">Re-enter your password*</label><br>
+                                <input type="password" id="re-type-pass" class="form-control"
                                     placeholder="Re-enter your password.." name="password">
                                 <div class="err-msg text-danger">Re-enter your password that matches your password!
                                 </div>
@@ -108,14 +108,66 @@
                         </div>
                     </div>
                     <div class="row mt-1">
-                        <div class="col">
-                            <div class="custom-control custom-radio">
-                                <div class="form-check">
-                                    
-                                </div>
+                        <div class="col-8">
+                            <div class="form-group">
+                                <label for="phone-num" class="text-white">Mobile number</label><br>
+                                <input type="tel" id="phone-num" class="form-control" value="Disabled field"
+                                    name="mob_num" disabled>
                             </div>
                         </div>
                     </div>
+                    <div class="row mt-1">
+                        <div class="col-8">
+                            <div class="form-group">
+                                <label for="places-want-to-visit" class="text-white">Choose place to visit first in
+                                    kerala</label><br>
+                                <select name="places" id="places-want-to-visit" class="form-control">
+                                    <option value="Varkala Beach" selected>Varkala Beach</option>
+                                    <option value="Chembra Peak">Chembra Peak</option>
+                                    <option value="Sree Krishna Swamy Temple">Sree Krishna Swamy Temple</option>
+                                    <option value="Banasura Sagar Dam">Banasura Sagar Dam</option>
+                                    <option value="Lighthouse Beach">Lighthouse Beach</option>
+                                    <option value="LuLu Mall">LuLu Mall</option>
+                                    <option value="Tea Gardens">Tea Gardens</option>
+                                    <option value="Gavi Forest">Gavi Forest</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-1">
+                        <div class="col-8">
+                            <label for="message" class="text-white">Comment*</label>
+                            <textarea name="user-feedback" id="message" class="form-control" rows="5"
+                                placeholder="Enter your valuable message..."></textarea>
+                        </div>
+                    </div>
+
+                    <div class="row mt-2">
+                        <div class="col">
+                            <div class="custom-control custom-radio">
+                                <input type="radio" class="custom-control-input" id="visit" name="visit-or-not">
+                                <label for="visit" class="text-white custom-control-label">Visited Kerala</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" class="custom-control-input" id="unvisit" name="visit-or-not">
+                                <label for="unvisit" class="text-white custom-control-label">No New to Kerala</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-1">
+                        <div class="col">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="accept-to-continue"
+                                    name="accept-cont" required>
+                                <label for="accept-to-continue" class="text-white custom-control-label">Accept to
+                                    Continue</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn p-4 d-flex align-content-center justify-content-center">
+                        <button type="submit" class="btn btn-lg btn-outline-primary text-white pr-5 pl-5">Submit</button>
+                    </div>
+                    
                 </form>
             </div>
 

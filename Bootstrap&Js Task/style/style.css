@@ -46,12 +46,6 @@
     cursor: pointer;
     opacity: 1;
 }
-/* .err-msg{
-    display: none;
-}
-.valid-msg{
-    display: none;
-} */
 .form-group.error input{
     border:2px solid red;
 }
@@ -77,28 +71,22 @@
 }
 
 
-.timer{
-    width: 600px;
-    height: 200px;
-    background-color:white;
-    border-radius: 5px;
-    padding: 15px;
-}
-.timer label{
-    font-size: 1.5rem;
-    font-weight: 600;
-}
-.timer input{
-    margin-left: 36px;
-    width: 100px;
-    height: 100px;
-    outline: none;
-    background: none;
-    border: none;
-    font-size: 3rem;
-    font-weight: 600;
-    /* box-shadow: 2px 2px 5px black; */
-}
+#timer {
+    font-size: 36px;
+  }
+
+  #progress-container {
+    width: 300px;
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  #progress-bar {
+    width: 0;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+  }
 
 #container{
     height: 100vh;

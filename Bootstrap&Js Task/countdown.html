@@ -11,49 +11,49 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="icon" href="img/logo.png" type="image/x-icon">
     <title>Countdown Timer</title>
+    <style>
+        label{
+            font-size: 1.5rem;
+        }
+        input{
+            width: 50%;
+            font-size: 1.5rem;
+        }
+    </style>
 </head>
 
 <body>
 
-    <div class="container mt-4" id="container" style="background-color: #B91036;">
+    <div class="container" id="container" style="background-color: #B91036;">
 
-        <h1 class="text-white text-center shadow">Countdown Timer</h1>
+        <h1 class="text-white text-center pt-5 pt-5 pb-5">Countdown Timer</h1>
 
-        <div class="container">
-            <div class="m-5">
-                <div class="row ml-4 timer mx-auto">
-                    <div class="col-md-4 col-md p-3">
-                        <label for="hour" class="text-dark pl-3">Hour</label><br>
-                        <input type="number" id="hour" class="text-dark" min="0" max="99" value="0">
-                    </div>
-                    <div class="col-md-4 col-md p-3">
-                        <label for="min" class="text-dark pl-3">Minutes</label><br>
-                        <input type="number" id="min" class="text-dark" min="0" max="60" value="0">
-                    </div>
-                    <div class="col-md-4 col-md p-3">
-                        <label for="sec" class="text-dark pl-3">Seconds</label><br>
-                        <input type="number" id="sec" class="text-dark" min="0" max="60" value="0">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="mx-auto my-2">
-                        <button id="start" class="btn btn-lg btn-dark">Start</button>
-                        <button id="reset" class="btn btn-lg btn-dark">Reset</button>
-                        <button id="stop" class="btn btn-lg btn-dark">Stop</button>
-                    </div>
-                </div>
-                <div class="row mt-4">
-                    <div class="col-md">
-                        <div class="progress">
-
-                        </div>
-                    </div>
-                </div>
-                
+        <div class="d-flex justify-content-center">
+            <div>
+                <label for="hours" class="text-white ml-4">Hours:</label><br>
+                <input type="number" id="hours" min="0" value="0" class="pl-4 mr-4 form-control">
+            </div>
+            <div>
+                <label for="minutes" class="text-white ml-4">Minutes:</label><br>
+                <input type="number" id="minutes" min="0" value="0" class="pl-4 mr-4 form-control">
+            </div>
+            <div>
+                <label for="seconds" class="text-white ml-4">Seconds:</label><br>
+                <input type="number" id="seconds" min="0" value="0" class="pl-4 mr-4 form-control">
             </div>
         </div>
 
+        <div class="d-flex justify-content-center mt-4 ">
+            <button id="startButton" class="btn btn-dark pl-4 pr-4 ml-4">Start</button>
+            <button id="stopButton" class="btn btn-dark pl-4 pr-4 ml-4">Stop</button>
+            <button id="resetButton" class="btn btn-dark pl-4 pr-4 ml-4">Reset</button>
+        </div>
 
+        <div id="timer" class="text-center text-white pt-3">00:00:00</div>
+
+        <div id="progress-container" class="pt-3">
+            <div id="progress-bar"></div>
+        </div>
     </div>
 
 

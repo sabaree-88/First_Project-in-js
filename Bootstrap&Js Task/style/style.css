@@ -26,6 +26,11 @@
     background-color: white;
     color: black;
 }
+.tales{
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+}
 .facts{
     background-color: #B91036;
 }
@@ -70,24 +75,3 @@
     height: 14px;
 }
 
-
-#timer {
-    font-size: 36px;
-  }
-
-  #progress-container {
-    width: 300px;
-    margin: 0 auto;
-    text-align: left;
-  }
-
-  #progress-bar {
-    width: 0;
-    height: 15px;
-    background-color: #fff;
-    border-radius: 10px;
-  }
-
-#container{
-    height: 100vh;
-}
